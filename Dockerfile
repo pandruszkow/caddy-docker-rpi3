@@ -3,9 +3,9 @@
 #
 FROM abiosoft/caddy:builder as builder
 
-ARG version="1.0.3"
-ARG plugins="git,cors,realip,expires,cache,cloudflare"
-ARG enable_telemetry="true"
+ARG version="1.0.4"
+ARG plugins="git,cors,realip,expires,cache,digitalocean,s3browser"
+ARG enable_telemetry="false"
 
 # process wrapper
 RUN go get -v github.com/abiosoft/parent

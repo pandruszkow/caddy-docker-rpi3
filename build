@@ -1,0 +1,12 @@
+#!/bin/sh
+#Fail on first error
+set -e
+
+BUILD_SH_MINIO_STYLE_TIMESTAMP=`date --utc +"%Y-%m-%dT%H-%M-%SZ"`
+BUILD_SH_CONTAINER_TAG="pandruszkow/caddy-s3-digitalocean:CUSTOM.$BUILD_SH_MINIO_STYLE_TIMESTAMP"
+
+docker build . -t "$BUILD_SH_CONTAINER_TAG"
+
+echo "Built Caddy container with Docker tag $BUILD_SH_CONTAINER_TAG"
+
+
