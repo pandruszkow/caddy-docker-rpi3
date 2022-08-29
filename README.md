@@ -1,3 +1,10 @@
+
+# THIS PROJECT IS DEPRECATED
+This fork was only useful to tailor Caddy v1 to my preferences (S3, DigitalOcean, no telemetry, Raspberry Pi 3 support). I've since switched to Caddy v2 and upgraded to a later Pi - this whole repo is obsolete.
+------------------------------------
+
+
+
 # caddy
 
 A [Docker](https://docker.com) image for [Caddy](https://caddyserver.com). This image includes [git](https://caddyserver.com/docs/http.git), [cors](https://caddyserver.com/docs/http.cors), [realip](https://caddyserver.com/docs/http.realip), [expires](https://caddyserver.com/docs/http.expires), [cache](https://caddyserver.com/docs/http.cache) and [cloudflare](https://caddyserver.com/docs/tls.dns.cloudflare) plugins.
